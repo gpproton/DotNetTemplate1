@@ -1,2 +1,0 @@
-﻿
-# All random contents.
