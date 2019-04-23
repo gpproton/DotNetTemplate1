@@ -6,7 +6,8 @@
          <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
              
              
-             
+            
+            
             <buttons:SfButton Text="Login Button" x:Name="SfButton"/>
              
              
