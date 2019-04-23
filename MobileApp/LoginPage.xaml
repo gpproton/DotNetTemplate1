@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MobileApp.LoginPage"
-             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms">
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms">
     <ContentPage.Content>
         
-         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+         <StackLayout HorizontalOptions="Center" VerticalOptions="Center" StyleClass="LoginPageMargin">
+
+            <inputLayout:SfTextInputLayout Hint="Username / Email">
+                <Entry x:Name="LoginUsername" Placeholder="Username/Email" IsTextPredictionEnabled="False" IsSpellCheckEnabled="False" Keyboard="email" />
+            </inputLayout:SfTextInputLayout>
+
+            <inputLayout:SfTextInputLayout
+                Hint="Password" EnablePasswordVisibilityToggle="true">
+                <Entry x:Name="LoginPassword" IsPassword="True" IsTextPredictionEnabled="False" IsSpellCheckEnabled="False" />
+            </inputLayout:SfTextInputLayout>
              
-             
-            
-            
-            <buttons:SfButton Text="Login Button" x:Name="SfButton"/>
+            <buttons:SfButton Text="Sign In" x:Name="LoginButton"/>
              
              
         </StackLayout>

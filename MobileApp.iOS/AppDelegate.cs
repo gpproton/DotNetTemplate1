@@ -5,6 +5,7 @@ using System.Linq;
 using Foundation;
 using Syncfusion.XForms.iOS.Border;
 using Syncfusion.XForms.iOS.Buttons;
+using Syncfusion.XForms.iOS.TextInputLayout;
 using UIKit;
 
 namespace MobileApp.iOS {
@@ -25,8 +26,11 @@ namespace MobileApp.iOS {
 			global::Xamarin.Forms.Forms.SetFlags ("Shell_Experimental", "Visual_Experimental", "CollectionView_Experimental", "FastRenderers_Experimental");
 			global::Xamarin.Forms.Forms.Init ();
 			LoadApplication (new App ());
-			SfBorderRenderer.Init ();
+
+            SfTextInputLayoutRenderer.Init();
+            SfBorderRenderer.Init ();
 			SfButtonRenderer.Init ();
+
 			return base.FinishedLaunching (app, options);
 		}
 	}
