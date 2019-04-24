@@ -7,12 +7,12 @@
         <StackLayout>
             <Label Text="Login to App" TextColor="DodgerBlue" VerticalOptions="Start" Margin="15"
                 HorizontalOptions="CenterAndExpand" FontSize="Large" />
-            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Margin="20">
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Margin="10">
                 
-                <Entry x:Name="LoginUsername" PlaceholderColor="DodgerBlue" Keyboard="Email"
+                <Entry x:Name="LoginUsername" PlaceholderColor="DodgerBlue" Keyboard="Email" Margin="10"
                        Placeholder="Username / Email" IsSpellCheckEnabled="False" IsTextPredictionEnabled="False" />
-                
-                <Entry x:Name="LoginPassword" PlaceholderColor="DodgerBlue"
+
+                <Entry x:Name="LoginPassword" PlaceholderColor="DodgerBlue" Margin="10"
                        Placeholder="Password" IsPassword="True" IsSpellCheckEnabled="False" IsTextPredictionEnabled="False" />
                 
                 <Button x:Name="LoginButton" BackgroundColor="DodgerBlue" TextColor="White"
