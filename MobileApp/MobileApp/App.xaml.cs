@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MobileApp.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,11 @@ namespace MobileApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+        #if DEBUG
+                    HotReloader.Current.Start(this);
+        #endif
+
+            MainPage = new NavigationPage (new LoginPage());
         }
 
         protected override void OnStart()

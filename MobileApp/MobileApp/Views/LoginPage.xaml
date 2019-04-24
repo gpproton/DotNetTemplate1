@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.Views.LoginPage" Visual="Material"
+             NavigationPage.HasNavigationBar="False" NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Login to App" TextColor="DodgerBlue" VerticalOptions="Start" Margin="15"
+                HorizontalOptions="CenterAndExpand" FontSize="Large" />
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Margin="20">
+                
+                <Entry x:Name="LoginUsername" PlaceholderColor="DodgerBlue" Keyboard="Email"
+                       Placeholder="Username / Email" IsSpellCheckEnabled="False" IsTextPredictionEnabled="False" />
+                
+                <Entry x:Name="LoginPassword" PlaceholderColor="DodgerBlue"
+                       Placeholder="Password" IsPassword="True" IsSpellCheckEnabled="False" IsTextPredictionEnabled="False" />
+                
+                <Button x:Name="LoginButton" BackgroundColor="DodgerBlue" TextColor="White"
+                        Text="Sign in" WidthRequest="200" HorizontalOptions="Center"
+                        Clicked="LoginButton_Clicked" />
+                
+            </StackLayout>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

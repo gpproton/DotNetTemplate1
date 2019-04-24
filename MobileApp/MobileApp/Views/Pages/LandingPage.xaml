@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.Views.Pages.LandingPage"
+             xmlns:Pages="clr-namespace:MobileApp.Views.Pages"
+             Visual="Material">
+
+    <ShellItem Title="Home">
+        <ShellSection Title="Check List">
+            <ShellContent ContentTemplate="{DataTemplate Pages:ListPage}" Title="Lists 1" />
+        </ShellSection>
+        <ShellSection Title="Demo Struct">
+            <ShellContent ContentTemplate="{DataTemplate Pages:AboutPage}" Title="About 1" />
+            <ShellContent ContentTemplate="{DataTemplate Pages:AboutPage}" Title="About 2" />
+        </ShellSection>
+    </ShellItem>
+    <ShellItem Title="Demo Two">
+        <ShellSection Title="Only Demo">
+            <ShellContent ContentTemplate="{DataTemplate Pages:AboutPage}" Title="About Demo" />
+        </ShellSection>
+    </ShellItem>
+
+</Shell>

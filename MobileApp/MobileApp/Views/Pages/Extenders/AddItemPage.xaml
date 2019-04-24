@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.Views.Pages.Extenders.AddItemPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="AddItemCancel" Text="Cancel" Clicked="AddItemCancel_Clicked" />
+        <ToolbarItem x:Name="AddItemSave" Text="Save" Clicked="AddItemSave_Clicked" />
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Button x:Name="AddBut" Text="Back" Clicked="AddBut_Clicked" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
