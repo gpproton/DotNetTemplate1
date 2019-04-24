@@ -4,8 +4,4 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.0.0.346134-pre9" />
-  </ItemGroup>
-
 </Project>
