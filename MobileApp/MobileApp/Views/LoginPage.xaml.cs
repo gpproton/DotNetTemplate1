@@ -20,8 +20,8 @@ namespace MobileApp.Views
 
         private async void LoginButton_Clicked(object sender, EventArgs e)
         {
-            bool LgnUsername = string.IsNullOrEmpty(LoginUsername.Text);
-            bool LgnPassword = string.IsNullOrEmpty(LoginPassword.Text);
+            bool LgnUsername = string.IsNullOrEmpty(LoginUsername.Text) || string.IsNullOrWhiteSpace(LoginUsername.Text);
+            bool LgnPassword = string.IsNullOrEmpty(LoginPassword.Text) || string.IsNullOrWhiteSpace(LoginPassword.Text);
 
             if (LgnPassword || LgnUsername)
             {

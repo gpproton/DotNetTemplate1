@@ -24,7 +24,7 @@ namespace MobileApp.Views.Pages.Extenders
 
         private async void AddItemCancel_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PopAsync();
+            await Navigation.PopAsync(true);
             //await Navigation.PopToRootAsync();
         }
 

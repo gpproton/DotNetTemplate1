@@ -8,7 +8,14 @@
     </ContentPage.ToolbarItems>
     
     <ContentPage.Content>
+        
         <StackLayout>
+            
+            <SearchBar x:Name="SearchBar"
+                   Placeholder="Search by name"
+                   CancelButtonColor="Gray"
+                       TextChanged="SearchBar_TextChanged"
+                       SearchButtonPressed="SearchBar_SearchButtonPressed"/>
             
             <Label Text="Main page waiting..!"
                 VerticalOptions="CenterAndExpand" 

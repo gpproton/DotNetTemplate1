@@ -20,9 +20,19 @@ namespace MobileApp.Views.Pages
 
         private async void ToolbarItem_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AddItemPage());
+            await Navigation.PushAsync(new AddItemPage(), true);
             //await Navigation.PopAsync();
             
+        }
+
+        private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void SearchBar_SearchButtonPressed(object sender, EventArgs e)
+        {
+
         }
     }
 }
